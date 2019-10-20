@@ -1,0 +1,12 @@
+{
+	"port": 3001,
+	"settings": {
+		"csrf": false,
+		"debug": false,
+		"loggerFormat": "tiny",
+		"staticPath": "public/"
+	},
+	"mongodb": {
+		"uri": "mongodb+srv://dev:F0tG5EPMRdmUM0rW@cluster0-g00ps.mongodb.net/admin?retryWrites=true&w=majority"
+	}
+}
