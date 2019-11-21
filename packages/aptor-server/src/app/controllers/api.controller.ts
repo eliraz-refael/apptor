@@ -7,6 +7,11 @@ import { Agenda, IAgenda } from '../models';
 })
 export class ApiController {
 
+	@Get('/')
+	hello() {
+		return new HttpResponseOK('Hi');
+	}
+
 	@Get('/agendas')
 	async getAgenda() {
 		const agendas = await Agenda.find();

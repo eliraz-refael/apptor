@@ -1,0 +1,8 @@
+{
+  "settings": {
+    "loggerFormat": "none"
+  },
+  "mongodb": {
+    "uri": "mongodb://localhost:27017/e2e-aptor-backend"
+  }
+}

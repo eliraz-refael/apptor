@@ -35,7 +35,7 @@ userSchema.methods.setPassword = async function(password: string) {
 export interface IUser extends Document {
 	email: string;
 	password: string;
-	fistName: string;
+	firstName: string;
 	lastName: string;
 	phoneNumber: number;
 	displayName: string;
