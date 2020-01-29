@@ -3,7 +3,15 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "shadow-cljs": "2.8.69"
+    "shadow-cljs": "2.8.83"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@material-ui/core": "^4.9.0",
+    "@material-ui/icons": "^4.5.1",
+    "@reach/router": "^1.2.1",
+    "effector": "^20.11.1",
+    "effector-react": "^20.6.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
 }

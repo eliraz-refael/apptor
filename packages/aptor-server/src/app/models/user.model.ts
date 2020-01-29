@@ -24,6 +24,22 @@ const userSchema: Schema = new Schema({
 		type: Number
 	},
 	displayName: {
+		type: String,
+		required: true
+	},
+	description: {
+		type: String
+	},
+	address: {
+		required: true,
+		type: String
+	},
+	city: {
+		required: true,
+		type: String
+	},
+	country: {
+		required: true,
 		type: String
 	}
 });
@@ -37,8 +53,12 @@ export interface IUser extends Document {
 	password: string;
 	firstName: string;
 	lastName: string;
+	address: string;
+	city: string;
+	country: string;
 	phoneNumber: number;
 	displayName: string;
+	description: string;
 	setPassword: (password: string) => Promise<void>;
 }
 

@@ -1,11 +1,18 @@
 ;; shadow-cljs configuration
 {:source-paths
- ["src/dev"
-  "src/main"
-  "src/test"]
+ ["src"]
 
- :dependencies
- []
+ :dependencies [[lilactown/hx "0.5.3"]
+				[clj-commons/cljss "1.6.4"]
+				[binaryage/devtools "0.9.11"]
+				[cljs-http "0.1.46"]
+				[org.clojure/core.async "0.7.559"]
+				[cider/cider-nrepl "0.23.0-SNAPSHOT"]]
 
- :builds
- {}}
+ :dev-http {8080 "target/"}
+ :builds {:app {:output-dir "target/"
+				:asset-path "."
+				:target :browser
+				:modules {:main {:init-fn app.main/init}}
+				:devtools {:after-load app.main/reload!
+						   :preloads [devtools.preload]}}}}

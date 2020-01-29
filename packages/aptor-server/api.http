@@ -1,0 +1,19 @@
+# Working
+GET http://localhost:3001/api/agendas
+#
+#
+# Working
+GET http://localhost:3001/api/users
+#
+#
+#
+POST http://localhost:3001/api/register
+Content-Type: application/json
+{
+	"email": "user1@test.com",
+	"password": "12345",
+	"firstName": "User 1",
+	"lastName": "Bar",
+	"phoneNumber": 44332234,
+	"displayName": "User Bar 1"
+}
