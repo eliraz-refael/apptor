@@ -26,12 +26,5 @@
 (defn ^:export init []
   (start))
 
-;; (defonce EL (atom nil))
-;; (defn ^:dev/after-load -render []
-;;   (when @EL
-;;     (react-dom/render
-;;      (hx/f [Main])
-;;      @EL)))
-
 (defn ^:export reload! []
   (mount))

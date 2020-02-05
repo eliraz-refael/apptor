@@ -3,6 +3,7 @@
 			["@material-ui/core" :refer [Button]]
 			[app.pages.register :refer [register-page]]
 			[app.layout :refer [main-layout]]
+			[app.pages.service-givers :refer [service-givers-page]]
 			[hx.hooks :as hooks]
 			[app.pages.agenda :refer [agenda-page]]
 			[hx.react :as hx :refer [defnc]]))
@@ -24,5 +25,5 @@
   [Router
    [config-page {:path "/"}]
    [login-page {:path "/login"}]
-   [agenda-page {:path "/agenda"}]
+   [service-givers-page {:path "/service-givers"}]
    [register-page {:path "/register"}]])
