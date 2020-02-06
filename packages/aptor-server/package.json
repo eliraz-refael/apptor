@@ -32,7 +32,7 @@
 	"dependencies": {
 		"@foal/core": "^1.2.0",
 		"@foal/mongoose": "^1.2.0",
-		"mongoose": "^5.7.4",
+		"mongoose": "^5.7.5",
 		"source-map-support": "^0.5.13"
 	},
 	"devDependencies": {
